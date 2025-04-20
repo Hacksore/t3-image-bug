@@ -16,13 +16,13 @@ async function readTxtFile(filePath) {
 
 let buffer = "";
 const borkenUrl = await readTxtFile('broken.txt');
-buffer += "🛑 broken link\n"
+buffer += "🛑 broken link\n\n"
 buffer += borkenUrl;
 
-buffer += "\n"
+buffer += "\n\n"
 
 const workingUrl = await readTxtFile('working.txt');
-buffer += "✅ working link\n";
+buffer += "✅ working link\n\n";
 buffer += workingUrl;
 
 console.log(buffer);
